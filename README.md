@@ -2,50 +2,40 @@
 
 An autonomous, model-agnostic YouTube Thumbnail Master Skill.
 
-## The goal
+## Goal
 
 The intended user experience is deliberately simple:
 
 > Give the AI a YouTube URL or a file. The Skill handles the rest.
 
-The system can ingest a video URL, thumbnail image, video file, script, title, or a combination; extract the useful evidence; understand the video's promise and audience; audit existing packaging; research comparable thumbnails when tools permit; generate multiple concepts; select a strategic direction; produce an image-generation/editing specification; run mobile and technical QA; create controlled variants; and define a measurement plan.
+The Skill is designed to infer the task from the supplied source and run the complete workflow: ingest the source, understand the video, audit current packaging, research comparable thumbnails when possible, generate multiple concepts, select a strategic direction, produce an exact thumbnail specification, generate or edit the image when supported, run mobile and technical QA, create controlled variants, and define a testing plan.
 
-## Architecture
+## Repository structure
 
-- `skill.md` — core behavior and decision rules.
-- `workflows/` — detailed task procedures.
-- `references/` — specialized knowledge modules.
-- `portable/` — compact bundles for AI products that cannot ingest the whole repository.
-- `adapters/` — setup instructions for ChatGPT, Claude, Grok and similar systems.
-- `MASTER_PROMPT.md` — single-file universal prompt for systems that accept only one instruction/file.
+- `skill.md` — core behavior, autonomous intake and decision rules.
+- `workflows/create-thumbnail.md` — create a thumbnail from a video/source brief.
+- `workflows/analyze-thumbnail.md` — audit an existing thumbnail.
+- `workflows/optimize-thumbnail.md` — diagnose weaknesses and create controlled variants.
+- `workflows/audience-thumbnail.md` — audience-specific packaging.
+- `workflows/competitor-analysis.md` — competitor research and hypothesis generation.
+- `workflows/prepublish-audit.md` — final release gate.
+- `references/` — specialized knowledge modules covering hierarchy, mobile, branding, competition, AI workflows, audience, faces/gaze, typography, analytics, trends, source-frame editing, and legal/trust.
 
 ## Zero-friction mode
 
-When an AI receives only a URL or file, it should not ask the user to choose between analysis, optimization and creation unless the input is genuinely ambiguous. It should infer the most useful complete workflow.
+A user should not need to know which workflow to invoke.
 
-### URL → complete workflow
+### URL
 
-1. Inspect URL and metadata.
-2. Extract title, channel, description, transcript when available, current thumbnail and visual context.
-3. Understand topic, audience, promise, emotional angle and curiosity gap.
-4. Audit the existing thumbnail when available.
-5. Research comparable recent thumbnails when web access is available.
-6. Generate 5–8 materially different concepts.
-7. Select the strongest strategic direction.
-8. Produce or edit the thumbnail when the AI has image capabilities.
-9. Run mobile-first and technical QA.
-10. Create 2–3 controlled variants.
-11. Return the final result and a testing plan.
+If given a YouTube URL, the AI should inspect available metadata, title, channel, current thumbnail, description, transcript/captions when accessible, format, topic clues and relevant competitive context. It should then complete the thumbnail workflow.
 
-### File → complete workflow
+### File
 
-The same pipeline applies to images, videos, scripts and documents, using the strongest available evidence and clearly marking anything that is inferred.
+If given an image, audit and optimize it. If given a video, inspect representative frames when supported and build from the strongest truthful visual evidence. If given a script, transcript or document, extract the strongest visual opportunities and create the thumbnail strategy.
 
-## Portable deployment
+### Multiple inputs
 
-For ChatGPT, put `skill.md` or the compact master instructions in Instructions and use the portable knowledge bundles as Knowledge. OpenAI's current guidance separates behavioral instructions from reference knowledge. urlOpenAI GPT configuration guidancehttps://help.openai.com/fr-fr/articles/8554397
-
-For Claude, create a Project, put the master instructions in Project Instructions and the knowledge bundles in Project Knowledge. Claude documents this separation and supports expanded project knowledge with RAG on eligible paid plans. urlClaude Projects documentationhttps://support.claude.com/fr/articles/9519177-comment-creer-et-gerer-des-projets
+Combine them. Prefer direct evidence over assumptions. Label uncertain conclusions as inference or hypothesis.
 
 ## Core principle
 
@@ -56,3 +46,16 @@ Optimize the whole chain:
 **impression → attention → comprehension → curiosity → click → expectation → viewer satisfaction**
 
 A thumbnail is a visual hypothesis that should be designed intentionally and validated with real-world data.
+
+## Deployment
+
+For AI systems with persistent instructions, use `skill.md` as the behavioral/system layer and upload the most relevant files from `references/` and `workflows/` as knowledge/context.
+
+For systems with limited file slots, prioritize:
+1. `skill.md`
+2. `references/testing-and-diagnostics.md`
+3. `references/visual-hierarchy.md`
+4. `references/mobile-optimization.md`
+5. the workflow matching the task
+
+When possible, enable web access for URL/competitor research and image generation/editing for final production.
