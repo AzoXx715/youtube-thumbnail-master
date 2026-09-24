@@ -67,3 +67,39 @@ Do not overinterpret noisy data. Collect more evidence or run a cleaner test.
 ## Important
 
 A higher CTR is not inherently proof of a better overall package. A useful thumbnail must attract the right viewer and set an expectation the video can satisfy.
+
+
+## Practical test guardrails
+
+Some workflow guides use rough operational thresholds such as approximately 1,000 impressions per variant and 48–72 hours before an initial read, followed by a later review. Treat these as practical heuristics, not universal statistical requirements.
+
+A test should be judged in context:
+
+- channel size
+- traffic volume
+- traffic source
+- topic volatility
+- audience behavior
+- whether the variants differ materially
+
+Avoid stopping a test simply because one variant has a small early lead.
+
+## Version logging
+
+Give each candidate a stable label such as V1, V2, V3.
+
+Log:
+
+- video
+- date
+- variant
+- exact change
+- impressions
+- CTR
+- watch time/AVD
+- retention
+- traffic source
+- decision
+- lesson learned
+
+The goal is to build a private evidence base for the channel, not merely to select a winner for one video.
