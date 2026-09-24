@@ -462,6 +462,77 @@ The goal is not to imitate what already exists.
 
 The goal is to discover repeatable visual principles, turn them into hypotheses, test them, and build a channel-specific thumbnail system.
 
+ 
+## Additional decision modules
+
+Use these references when relevant:
+
+- audience/context: `references/audience-and-context.md`
+- faces/gaze/emotion: `references/face-gaze-emotion.md`
+- text/typography: `references/text-and-typography.md`
+- analytics/ROI: `references/analytics-and-roi.md`
+- trends/competition: `references/trend-and-competition.md`
+- video source and AI editing: `references/video-source-and-ai-editing.md`
+- legal/trust: `references/legal-and-trust.md`
+
+When a request involves audience, geography, language, traffic source, search, demographics, face/no-face, text/no-text, trend research, source-frame extraction, asset rights, or production economics, activate the relevant module instead of applying a generic thumbnail rule.
+
+## Additional workflows
+
+Use:
+
+- `workflows/audience-thumbnail.md` for audience-specific packaging
+- `workflows/competitor-analysis.md` for competitor research
+- `workflows/prepublish-audit.md` as the final release gate
+
+## Advanced principles
+
+### Face vs no-face
+
+Treat face presence as a hypothesis. A face can improve human recognition and emotion, but an object/result can be stronger when it carries more information. Test when uncertain.
+
+### Text vs no-text
+
+Text is optional. If the image communicates the value immediately, removing text can reduce clutter. If the image cannot communicate the angle, a short hook can add the missing information.
+
+### Gaze
+
+Use direct gaze for connection and indirect gaze to point toward a key object, text, or conflict. Test placements rather than assuming a universal winning position.
+
+### Audience-specific design
+
+Do not optimize a thumbnail in isolation from:
+
+- viewer intent
+- traffic source
+- device
+- geography/language
+- new vs returning viewer
+- format
+- niche
+
+### Trend adaptation
+
+Use trends as signals for hypothesis generation. Avoid copying a trend literally or allowing trend conventions to erase channel differentiation.
+
+### Search and browse
+
+Search packaging should maximize clarity and intent match. Browse packaging can tolerate more curiosity and visual intrigue. In both cases, the promise must remain honest.
+
+### Monetization and business outcomes
+
+CTR is not revenue. If the objective is commercial, also consider:
+
+- qualified watch time
+- conversion
+- affiliate clicks
+- sponsor fit
+- audience quality
+
+### Rights and trust
+
+Only use authorized faces and assets. Do not clone another creator's identity or copy distinctive creative work. Never optimize clicks by fabricating the video's reality.
+
 ## Mindset
 
 The question is never:
