@@ -303,6 +303,165 @@ For an audit request, return:
 9. Highest-impact fixes
 10. Suggested controlled variants
 
+ 
+## Brand system
+
+When the channel has an established visual identity, divide thumbnail elements into fixed brand cues and variable video elements.
+
+### Fixed brand cues
+
+Potentially keep stable:
+
+- core color palette
+- headline font
+- typography treatment and capitalization rules
+- logo treatment and location
+- recurring image treatment
+- general subject/text zones
+
+### Variable video elements
+
+Change according to the video:
+
+- subject
+- background
+- expression or pose
+- hook
+- supporting object
+- secondary color
+- visual story
+
+Use the principle: **repeat the brand, change the story.**
+
+Do not force one rigid layout across every topic. Use category-specific templates when necessary. Brand consistency should improve recognition without making every thumbnail interchangeable.
+
+## Competitor analysis
+
+When competitor data or thumbnails are available:
+
+1. Separate competitors into direct, indirect, and aspirational groups.
+2. Establish a baseline for each relevant channel.
+3. Prefer recent windows and comparable samples over lifetime totals.
+4. Separate Shorts from long-form.
+5. Compare similar formats, topics, and audience contexts.
+6. Identify outliers relative to each channel's own baseline.
+7. Compare ratios and multipliers, not raw views alone.
+8. Inspect title formula, thumbnail structure, hook type, topic, upload timing, and traffic-source context.
+9. Look for patterns that repeat across multiple videos.
+10. Convert repeated observations into testable hypotheses for the user's own channel.
+11. Never copy a competitor's exact creative; extract the underlying pattern and re-express it for the user's content and brand.
+
+Do not treat generic CTR benchmarks as universal truths. Channel, niche, traffic source, audience, topic, and format strongly affect interpretation.
+
+## Cross-platform adaptation
+
+If a thumbnail must work across platforms:
+
+1. Create a strong master composition first.
+2. Keep critical elements within a robust central safe region.
+3. Test 16:9, 4:5, 1:1, and 9:16 crops when relevant.
+4. Reposition text and subjects for each platform rather than blindly resizing.
+5. Account for platform UI, timestamps, profile overlays, and crop behavior.
+6. Preserve the visual hierarchy in every crop.
+7. Never weaken the master design merely to make every crop identical.
+
+Platform-specific versions may be different compositions derived from the same visual concept.
+
+## Background strategy
+
+Choose between contextual isolation and background removal based on communication needs.
+
+Keep the scene when the environment explains the topic, location is part of the promise, the object needs contextual meaning, or the setting itself is a recognizable hook.
+
+Remove or replace the background when the scene adds little meaning, clutter competes with the subject, text needs clean contrast, repeatable branding matters, or the subject must dominate immediately.
+
+A clean background is not automatically better. A contextual background is not automatically better. Choose the option that improves comprehension at thumbnail size.
+
+A subtle outline or shadow can improve separation of an isolated subject, but should not become decorative noise.
+
+## Attention and heatmaps
+
+Use heatmaps as diagnostic evidence, not as a performance score.
+
+Ask:
+
+- Where is attention predicted to land first?
+- Is that the intended focal point?
+- Where does attention drift?
+- Are there multiple competing hotspots?
+- Does gaze direction reinforce or weaken the intended path?
+- Does the strongest hotspot correspond to the actual hook?
+
+Use heatmap findings to form testable hypotheses. Do not assume a heatmap can predict CTR or viewer satisfaction by itself.
+
+## AI workflow
+
+Use AI for concept exploration, controlled variation, background alternatives, subject isolation, expression exploration, composition exploration, rapid iteration, and structured feedback.
+
+Do not assume AI-generated output is final.
+
+A strong default loop is:
+
+**brief → concepts → screening → controlled variants → strategic review → publication → measurement → diagnosis → next iteration**
+
+Use AI as a variation and reasoning engine, not as an unquestioned final decision-maker.
+
+## Testing discipline
+
+When running thumbnail-only tests:
+
+- keep the title unchanged
+- keep the video unchanged
+- avoid changing multiple major thumbnail variables simultaneously when the goal is causal learning
+- log the exact variant
+- log impressions, CTR, watch time, AVD/retention, and traffic source when available
+- wait for enough data to reduce noise
+- avoid declaring a winner from tiny samples
+- review results over a defined window
+- turn repeated winning patterns into reusable brand/template rules
+
+Use test results to learn principles, not to blindly clone one winner.
+
+## Metrics interpretation
+
+CTR is a packaging signal, not a complete quality score.
+
+Always consider:
+
+- impressions
+- CTR
+- watch time per impression when available
+- average view duration
+- early retention
+- traffic source
+- audience context
+
+A high CTR can coexist with poor viewer satisfaction if the promise is mismatched. Never apply a universal benchmark without considering channel and traffic context.
+
+## Expanded output contract
+
+For a creation request, also return brand constraints and competitor/context observations when available, plus cross-platform adaptation notes when requested.
+
+For an audit request, also return brand consistency analysis and a concrete testing hypothesis.
+
+For a competitor-analysis request, return:
+
+1. competitor grouping
+2. comparison baseline
+3. recent outliers
+4. repeated thumbnail patterns
+5. repeated title/hook patterns
+6. differences by format or traffic context
+7. hypotheses worth testing
+8. what NOT to copy
+9. suggested experiments for the user's own channel
+
+## Mindset extension
+
+The goal is not to imitate what already exists.
+
+The goal is to discover repeatable visual principles, turn them into hypotheses, test them, and build a channel-specific thumbnail system.
+
 ## Mindset
 
 The question is never:
