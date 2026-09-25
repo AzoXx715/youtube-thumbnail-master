@@ -26,8 +26,22 @@ Write:
 - curiosity gap
 - title message
 - thumbnail message
+- semantic relationships that must remain correct
 
-### B. Concept sprint
+### B. Hierarchy budget
+
+Before generating, explicitly decide:
+
+- hero subject
+- secondary subject, if any
+- hook text, if any
+- 0–2 contextual cues
+- background treatment
+- what will be deliberately excluded
+
+Do not start by filling the canvas.
+
+### C. Concept sprint
 
 Generate 8 concepts.
 
@@ -42,8 +56,9 @@ For each concept specify:
 - text hook, if any
 - background treatment
 - main curiosity mechanism
+- semantic placement of people, logos, flags, maps, or opposing sides
 
-### C. Selection
+### D. Selection
 
 Reject concepts that:
 
@@ -53,8 +68,10 @@ Reject concepts that:
 - are visually generic
 - duplicate the title
 - become confusing on mobile
+- contain spatial relationships that can be misread
+- rely on clutter to communicate the story
 
-### D. Final production brief
+### E. Final production brief
 
 Specify:
 
@@ -72,9 +89,10 @@ Specify:
 - text placement
 - depth
 - background complexity
+- semantic relationships
 - platform-safe areas
 
-### E. Generation prompt
+### F. Generation prompt
 
 The final image-generation prompt should explicitly describe:
 
@@ -88,8 +106,32 @@ The final image-generation prompt should explicitly describe:
 8. typography treatment when supported
 9. visual hierarchy
 10. realism/quality constraints
+11. semantic placement constraints
 
-### F. Variants
+Use explicit language such as:
+
+- "large hero subject"
+- "secondary elements visibly subordinate"
+- "clean negative space around the hook"
+- "single coherent background"
+- "no unnecessary background characters"
+- "keep country/side associations spatially correct"
+- "do not place opposing figures in the wrong national context"
+
+### G. Subtraction pass
+
+Before final generation or delivery, remove unnecessary visual information.
+
+Ask:
+
+- Can one background object disappear?
+- Can the hero subject become larger?
+- Can the hook become larger?
+- Is any element present only because the space was empty?
+
+Prefer subtraction to shrinking.
+
+### H. Variants
 
 Create 2–3 variants where each changes one major hypothesis:
 
@@ -98,5 +140,6 @@ Create 2–3 variants where each changes one major hypothesis:
 - hook
 - supporting object
 - composition
+- background complexity
 
 Do not change everything simultaneously.
