@@ -25,7 +25,9 @@ Use a short hook, commonly 1–5 words depending on context.
 
 Do not treat word counts as hard laws. Meaning, font size, language, and composition matter.
 
-## Typography
+## Typography hierarchy
+
+Use one clear text hierarchy.
 
 Prefer:
 
@@ -37,6 +39,10 @@ Prefer:
 
 Use no more than 1–2 primary fonts in most branded systems.
 
+The hook should be large enough to compete with the subject for attention without obscuring the subject.
+
+A logo or franchise title should not silently become a larger visual headline than the actual hook unless the brand itself is the video's central subject.
+
 ## Placement
 
 Avoid:
@@ -45,6 +51,7 @@ Avoid:
 - bottom-right UI conflicts
 - tiny corners
 - complex backgrounds behind letters
+- placing text where it creates an unintended association between two subjects
 
 Use negative space deliberately.
 
@@ -56,6 +63,16 @@ Evaluate both:
 - text/subject separation
 
 Contrast should be checked at mobile size, not only at full resolution.
+
+## Semantic placement
+
+Text can change the perceived meaning of an image.
+
+Verify that:
+
+- text sits visually with the subject it describes
+- flags/logos remain associated with the correct person or side
+- opposing subjects are not accidentally grouped with the wrong label
 
 ## One-variable typography tests
 
