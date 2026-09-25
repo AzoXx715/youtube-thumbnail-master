@@ -15,13 +15,35 @@ Remove context when it competes with the story.
 
 Use depth, blur, contrast control, and selective simplification to keep the scene subordinate.
 
-## Remove the background when
+## Remove or simplify when
 
 - it adds little meaning
 - it creates clutter
 - text needs clean contrast
 - branding needs repeatable backgrounds
 - the subject needs maximum dominance
+- several background elements create multiple focal points
+
+## Simplification hierarchy
+
+Do not jump directly from "detailed" to "empty."
+
+Use this order:
+
+1. remove irrelevant objects
+2. reduce secondary faces/characters
+3. reduce contrast and sharpness
+4. blur or push secondary planes into depth
+5. simplify lighting
+6. replace with a cleaner contextual environment only if necessary
+
+## Collage warning
+
+A collage of many scenes can look impressive at full resolution while becoming unreadable on mobile.
+
+Only use multiple environments when their combination is the actual story mechanism.
+
+Otherwise, choose one dominant environment and let the hero subject carry the narrative.
 
 ## Finishing
 
@@ -36,7 +58,7 @@ At small size, ask:
 - does the background create an accidental focal point?
 - is text easier or harder to read?
 
-Choose the version that improves communication, not the version that is aesthetically simpler by default.
+Choose the version that improves communication, not the version that contains the most information.
 
 ## Evidence caution
 
