@@ -29,7 +29,22 @@ Determine whether attention plausibly flows:
 
 **subject → hook → support → background**
 
-### 4. Mobile
+Also check whether the hierarchy has more than two meaningful focal points.
+
+### 4. Semantic correctness
+
+Inspect whether the composition communicates the intended relationships:
+
+- person ↔ country
+- person ↔ side
+- logo ↔ brand
+- object ↔ event
+- arrow ↔ target
+- text ↔ subject
+
+Flag visually obvious contradictions. Do not assume tiny labels will repair a contradictory composition.
+
+### 5. Mobile
 
 Assess at reduced scale.
 
@@ -40,8 +55,9 @@ Check:
 - text legibility
 - silhouette
 - visual story
+- whether secondary elements merge into noise
 
-### 5. Text
+### 6. Text
 
 Assess:
 
@@ -50,8 +66,9 @@ Assess:
 - contrast
 - semantic strength
 - duplication of title
+- relative scale versus the primary subject
 
-### 6. Background
+### 7. Background
 
 Assess:
 
@@ -59,8 +76,10 @@ Assess:
 - competing objects
 - bright regions
 - accidental focal points
+- number of environments/scenes
+- whether each background element adds meaning
 
-### 7. Packaging
+### 8. Packaging
 
 Assess:
 
@@ -69,7 +88,7 @@ Assess:
 - whether they complement each other
 - what question remains after seeing both
 
-### 8. Technical QA
+### 9. Technical QA
 
 Check anatomy, objects, perspective, lighting, typography, crop, and rendering artifacts.
 
@@ -80,9 +99,21 @@ Provide:
 - strengths
 - weaknesses
 - attention path
+- semantic mistakes, if any
 - biggest distraction
 - highest-impact fix
 - optional micro-fixes
 - 2–3 controlled test ideas
 
-Do not use a simplistic single score as the only conclusion.
+## Highest-impact fix rule
+
+When several problems exist, do not recommend many simultaneous micro-adjustments.
+
+Identify the smallest set of structural changes that can restore:
+
+1. one dominant focal point
+2. readable hook
+3. correct semantic associations
+4. subordinate background
+
+A strong audit should often conclude with **remove, enlarge, reposition** rather than "add more detail."
