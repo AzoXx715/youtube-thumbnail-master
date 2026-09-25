@@ -1,6 +1,6 @@
 ---
 name: youtube-thumbnail-master
-description: Expert system for creating, analyzing, testing, and optimizing YouTube thumbnails. Use for thumbnail strategy, concepts, image-generation prompts, visual audits, title-thumbnail packaging, mobile readability, attention hierarchy, A/B testing, and performance diagnosis.
+description: Expert system for creating, analyzing, testing, and optimizing YouTube thumbnails. Use for thumbnail strategy, concepts, image-generation prompts, visual audits, title-thumbnail packaging, mobile readability, attention hierarchy, semantic composition, background simplification, A/B testing, and performance diagnosis.
 ---
 
 # YouTube Thumbnail Master
@@ -40,6 +40,7 @@ Extract:
 - title message
 - thumbnail message
 - curiosity gap
+- semantic relationships between subjects, locations, objects, flags, logos, and text
 
 ### 2. Define the visual idea
 
@@ -52,6 +53,7 @@ Ask:
 - What should remain unanswered?
 - What information belongs in the title instead?
 - What can be removed?
+- Which elements must be spatially associated because their position changes their meaning?
 
 The thumbnail should usually contain:
 
@@ -60,7 +62,30 @@ The thumbnail should usually contain:
 - optional short text
 - a contextual but subordinate background
 
-### 3. Generate concepts
+**Do not maximize information density. Maximize information delivered per visual element.**
+
+### 3. Build a hierarchy budget before generating
+
+Assign explicit roles before composing:
+
+- **Level 1 — Hero:** one subject, face, object, or visual event.
+- **Level 2 — Hook:** short text or one supporting visual that explains the conflict.
+- **Level 3 — Context:** only what is necessary to establish topic/location/time.
+- **Level 4 — Atmosphere:** lighting, texture, depth, particles, scenery.
+
+Default rule: Level 4 must never compete with Levels 1–2.
+
+Use a practical visual hierarchy budget:
+
+- 1 dominant focal point
+- 1 secondary focal point at most
+- 1 short text block at most unless the concept genuinely requires more
+- 0–2 meaningful contextual cues
+- unlimited subtle atmosphere only if it remains visually subordinate
+
+If a design needs many objects to explain itself, redesign the concept rather than shrinking everything.
+
+### 4. Generate concepts
 
 Create 5–8 fundamentally different concepts before converging.
 
@@ -77,7 +102,7 @@ meaningfully changes.
 
 Do not produce eight cosmetic variations of one idea.
 
-### 4. Select
+### 5. Select
 
 Filter concepts using:
 
@@ -90,9 +115,12 @@ Filter concepts using:
 - title-thumbnail complementarity
 - simplicity
 - differentiation
+- semantic correctness
 - technical plausibility
 
-### 5. Build the composition
+Reject a visually impressive concept if the viewer has to decode it.
+
+### 6. Build the composition
 
 Preferred attention path:
 
@@ -100,17 +128,88 @@ Preferred attention path:
 
 The strongest contrast, sharpness, scale, and visual energy should generally reinforce the intended focal point.
 
-Remove attention parasites.
+### 6.1 Semantic placement check
 
-### 6. Add text only if it helps
+Before finalizing, verify that spatial relationships communicate the intended meaning.
 
-Default guideline: 3–5 words.
+This is mandatory for:
+
+- politicians and public figures
+- flags and countries
+- maps
+- logos and brands
+- opposing people or teams
+- before/after subjects
+- cause/effect visuals
+- arrows and directional cues
+
+**Never place a subject in a region that semantically contradicts the story.**
+
+Examples:
+
+- If the story is France vs Russia, French and Russian visual identities must be clearly associated with the correct person/side.
+- If two people represent opposing sides, each person should sit on the side/context they actually represent unless the reversal is itself the explicit hook.
+- Do not rely on tiny flags to correct a large, visually obvious spatial contradiction.
+
+Treat spatial semantics as part of factual accuracy, not decoration.
+
+### 6.2 Background simplification
+
+Backgrounds must be designed around the focal subject, not filled for visual richness.
+
+Use:
+
+- large simple shapes
+- controlled blur/depth
+- reduced contrast
+- selective detail
+- atmospheric lighting
+
+Remove:
+
+- secondary characters that are not part of the hook
+- random buildings
+- duplicate objects
+- tiny narrative fragments
+- decorative papers/maps/screens
+- competing faces
+- bright highlights unrelated to the story
+
+**If an object does not improve comprehension, context, contrast, or curiosity, remove it.**
+
+When the background becomes a collage, first attempt a simpler composition rather than trying to make every element smaller.
+
+### 6.3 Scale hierarchy
+
+Do not allow a brand logo, franchise logo, or decorative element to become visually larger or stronger than the actual story subject unless the logo itself is the story.
+
+For title/subject relationships:
+
+- the main subject should usually dominate the frame
+- the hook text should be readable at mobile size
+- logos should identify, not steal attention
+- secondary text should never visually overpower the primary subject
+
+If a known brand/logo is necessary, keep it subordinate unless the video is specifically about that brand/logo.
+
+### 7. Add text only if it helps
+
+Default guideline: 1–5 words.
 
 Text is a hook, not a transcript.
 
 The title and thumbnail should complement one another rather than repeat one another.
 
-### 7. Design mobile-first
+Prioritize:
+
+1. large readable hook
+2. strong contrast
+3. short wording
+4. one clear typographic block
+
+Never sacrifice hierarchy to fit more text.
+
+### 8. Design mobile-first
 
 Evaluate at:
 
@@ -121,14 +220,16 @@ Evaluate at:
 
 At small size the viewer should still identify:
 
-- subject
+- primary subject
 - emotional tone
 - core visual event
 - text, when used
 
 If not, simplify.
 
-### 8. Quality control
+**At mobile size, hierarchy errors become more important than missing details.**
+
+### 9. Quality control
 
 Check:
 
@@ -146,11 +247,29 @@ Check:
 - reflections
 - lighting consistency
 - background distractions
+- semantic placement
+- subject/flag/logo association
 - spelling
 - platform-safe composition
 - title-thumbnail promise
 
-### 9. Testing
+### 10. Pre-final simplification pass
+
+Before delivery, perform a deliberate subtraction pass.
+
+Ask:
+
+- Can I remove one background element?
+- Can I remove one decorative effect?
+- Can I enlarge the hero subject?
+- Can I enlarge the hook by removing something else?
+- Is there more than one accidental focal point?
+- Does any element attract attention without contributing to the story?
+- Does any spatial relationship create a false or confusing interpretation?
+
+**Prefer removing 20% of the visual information over shrinking everything by 20%.**
+
+### 11. Testing
 
 When real data is available:
 
@@ -180,6 +299,11 @@ Do not treat CTR alone as the definition of success.
 13. Generate multiple hypotheses before committing.
 14. Use controlled variants to learn.
 15. Use real performance data to validate assumptions.
+16. Spatial relationships must match the story.
+17. Never solve clutter by making every element smaller.
+18. When uncertain, simplify the background before adding more effects.
+19. Brand cues identify the topic; they do not automatically become the focal point.
+20. Run a subtraction pass before final delivery.
 
 ## Faces
 
@@ -261,6 +385,7 @@ Investigate:
 - weak subject scale
 - poor contrast
 - clutter
+- semantic misplacement
 
 ### Strong CTR + weak early retention
 
@@ -298,12 +423,12 @@ For an audit request, return:
 4. Text analysis
 5. Mobile analysis
 6. Background/distraction analysis
-7. Title-thumbnail relationship
-8. Technical QA
-9. Highest-impact fixes
-10. Suggested controlled variants
+7. Semantic placement check
+8. Title-thumbnail relationship
+9. Technical QA
+10. Highest-impact fixes
+11. Suggested controlled variants
 
- 
 ## Brand system
 
 When the channel has an established visual identity, divide thumbnail elements into fixed brand cues and variable video elements.
@@ -402,7 +527,7 @@ Do not assume AI-generated output is final.
 
 A strong default loop is:
 
-**brief → concepts → screening → controlled variants → strategic review → publication → measurement → diagnosis → next iteration**
+**brief → concepts → screening → composition → subtraction pass → semantic QA → controlled variants → strategic review → publication → measurement → diagnosis → next iteration**
 
 Use AI as a variation and reasoning engine, not as an unquestioned final decision-maker.
 
@@ -462,7 +587,6 @@ The goal is not to imitate what already exists.
 
 The goal is to discover repeatable visual principles, turn them into hypotheses, test them, and build a channel-specific thumbnail system.
 
- 
 ## Additional decision modules
 
 Use these references when relevant:
@@ -482,7 +606,7 @@ When a request involves audience, geography, language, traffic source, search, d
 Use:
 
 - `workflows/audience-thumbnail.md` for audience-specific packaging
-- `workflows/competitor-analysis.md` for competitor research
+- `workflows/competitor-analysis.md` for competitor research and hypothesis generation
 - `workflows/prepublish-audit.md` as the final release gate
 
 ## Advanced principles
